@@ -62,7 +62,7 @@ devDependencies:
     specifier: ^15.13.0
     version: 15.15.0
   vite:
-    specifier: ^6.0.3
+    specifier: ^6.3.5
     version: 6.3.5
 
 packages:
