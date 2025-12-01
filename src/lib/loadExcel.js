@@ -225,8 +225,8 @@ function parseBuffer(buf) {
 export async function loadExcelFromPublic() {
   const tried = [];
   try {
-    tried.push("/companies1.xlsx");
-    const buf = await fetchBuffer("/companies1.xlsx");
+    tried.push("/companies2.xlsx");
+    const buf = await fetchBuffer("/companies2.xlsx");
     return parseBuffer(buf);
   } catch {}
 
@@ -238,7 +238,7 @@ export async function loadExcelFromPublic() {
 
   try {
     const assetUrl = new URL(
-      "../assets/companies1.xlsx",
+      "../assets/companies2.xlsx",
       import.meta.url
     ).toString();
     tried.push(assetUrl);
